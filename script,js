@@ -11,3 +11,18 @@ function showNextQuote() {
 // Initial display
 quotes[0].classList.add('active');
 setInterval(showNextQuote, 5000); // Change every 5 seconds
+// Lightbox Functionality
+const galleryImages = document.querySelectorAll('.gallery-container img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+galleryImages.forEach(img => {
+  img.addEventListener('click', () => {
+    lightbox.style.display = 'flex';
+    lightboxImg.src = img.src;
+  });
+});
+
+function closeLightbox() {
+  lightbox.style.display = 'none';
+}
