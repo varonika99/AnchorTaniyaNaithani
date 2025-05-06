@@ -1,57 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Emcee Taniya Naithani – Premium Event Host</title>
-  <meta name="description" content="Book Emcee Taniya Naithani for luxury weddings, corporate events, and stage hosting across India. Experience charm, charisma, and professionalism in every moment.">
-  <meta name="keywords" content="Emcee, Host, Taniya Naithani, Wedding Emcee, Event Anchor, Corporate Host India">
-  <meta name="author" content="Taniya Naithani">
-
-  <!-- Open Graph for Social Sharing -->
-  <meta property="og:title" content="Emcee Taniya Naithani – Premier Event Host">
-  <meta property="og:description" content="Elevate your event with a professional emcee who knows how to captivate.">
-  <meta property="og:image" content="https://varonika99.github.io/emceetaniyanaithani/assets/logo.jpeg">
-  <meta property="og:url" content="https://varonika99.github.io/emceetaniyanaithani">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Favicon -->
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
-
-  <!-- Stylesheet -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anchor Taniya Naithani</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
+<body>
 
+  <!-- Header -->
+  <header>
+    <img src="assets/logo.png" alt="Logo" class="logo" />
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<section id="testimonials" class="testimonials">
-  <h2>Client Testimonials</h2>
-  <div class="testimonial-slider">
-    <div class="testimonial active">“Taniya was the heart of our event! Energetic, elegant, and totally engaging.”<br><span>– Rohan M.</span></div>
-    <div class="testimonial">“She knew exactly how to work the crowd. The evening was unforgettable.”<br><span>– Meenal S.</span></div>
-    <div class="testimonial">“One of the most professional emcees we’ve worked with. Highly recommend!”<br><span>– Apex Events</span></div>
-  </div>
-  <div class="testimonial-controls">
-    <button onclick="prevTestimonial()">‹</button>
-    <button onclick="nextTestimonial()">›</button>
-  </div>
-</section>
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <h1>Welcome to Anchor Taniya Naithani's World</h1>
+    <p>Engaging, Enthralling, and Everlasting Memories</p>
+    <a href="#contact" class="cta-button">Book Now</a>
+  </section>
 
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      <!-- Insert your 2000+ words about section content here -->
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. <!-- Continue with your content -->
+    </p>
+  </section>
 
-<!-- Lightbox Container -->
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-  <img id="lightbox-img" src="" alt="Expanded View">
-</div>
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+      <!-- Gallery Images from taniya100.jpg to taniya140.jpg -->
+      <img src="assets/gallery/taniya100.jpg" alt="Gallery Image 100" />
+      <img src="assets/gallery/taniya101.jpg" alt="Gallery Image 101" />
+      <!-- Add images up to taniya140.jpg -->
+      <img src="assets/gallery/taniya140.jpg" alt="Gallery Image 140" />
+    </div>
+  </section>
 
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <h2>What Clients Say</h2>
+    <div class="testimonial-slider">
+      <blockquote class="testimonial active">
+        "Taniya was phenomenal at our wedding. Her energy was contagious!"
+        <span>– Rahul & Priya</span>
+      </blockquote>
+      <!-- Add 19 more testimonials here -->
+    </div>
+    <div class="testimonial-controls">
+      <button onclick="prevTestimonial()">‹</button>
+      <button onclick="nextTestimonial()">›</button>
+    </div>
+  </section>
 
-<img src="assets/logo.jpeg" alt="Taniya Naithani Logo" class="logo">
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Get in touch to make your event unforgettable!</p>
+    <ul>
+      <li><a href="mailto:contact@taniyanaithani.com">contact@taniyanaithani.com</a></li>
+      <li><a href="tel:+911234567890">+91 12345 67890</a></li>
+      <li><a href="https://instagram.com/taniyanaithani" target="_blank">@taniyanaithani</a></li>
+    </ul>
+  </section>
 
-<!-- Favicon & App Icons -->
-<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="assets/logo.jpeg">
-<meta name="theme-color" content="#000000">
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Anchor Taniya Naithani. All rights reserved.</p>
+  </footer>
 
+  <!-- JavaScript for Testimonials -->
+  <script>
+    const testimonials = document.querySelectorAll('.testimonial');
+    let currentTestimonial = 0;
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<li><i class="fas fa-envelope"></i> <a href="mailto:booktaniyanaithani@gmail.com">booktaniyanaithani@gmail.com</a></li>
-<footer>
-  <p>&copy; 2025 Emcee Taniya Naithani. All Rights Reserved.</p>
-</footer>
+    function showTestimonial(index) {
+      testimonials.forEach((testimonial, i) => {
+        testimonial.classList.toggle('active', i === index);
+      });
+    }
 
+    function nextTestimonial() {
+      currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+      showTestimonial(currentTestimonial);
+    }
+
+    function prevTestimonial() {
+      currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+      showTestimonial(currentTestimonial);
+    }
+
+    setInterval(nextTestimonial, 5000);
+  </script>
+
+</body>
+</html>
