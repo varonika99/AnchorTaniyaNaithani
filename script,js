@@ -1,0 +1,13 @@
+// Rotating Testimonials
+const quotes = document.querySelectorAll('.testimonial-slider blockquote');
+let currentQuote = 0;
+
+function showNextQuote() {
+  quotes[currentQuote].classList.remove('active');
+  currentQuote = (currentQuote + 1) % quotes.length;
+  quotes[currentQuote].classList.add('active');
+}
+
+// Initial display
+quotes[0].classList.add('active');
+setInterval(showNextQuote, 5000); // Change every 5 seconds
