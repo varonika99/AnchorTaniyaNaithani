@@ -292,3 +292,44 @@ footer p {
   color: #aaa;
   font-size: 15px;
 }
+/* STEP 10: HERO SECTION */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('assets/banner.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cta-button {
+  background-color: #e3b04b;
+  color: #111;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #cf9f3e;
+  color: #fff;
+}
