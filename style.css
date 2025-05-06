@@ -31,11 +31,11 @@ header {
 }
 
 .logo {
-/* Navigation Bar */
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 30px;
+  height: 80px;
+  margin-right: 15px;
+  border-radius: 10px;
+  object-fit: contain;
+}
 }
 
 .nav-links li a {
