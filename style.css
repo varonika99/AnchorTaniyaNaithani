@@ -275,3 +275,20 @@ header {
 .contact ul li a:hover {
   color: #c76b00;
 }
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #eee;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  border-top: 2px solid #e58e26;
+}
+
+footer p {
+  margin: 0;
+  color: #aaa;
+  font-size: 15px;
+}
