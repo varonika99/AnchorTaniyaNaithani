@@ -31,5 +31,24 @@ header {
 }
 
 .logo {
+/* Navigation Bar */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
+  color: #fff;
+}
+
+.nav-links li a:hover {
+  background: #fff;
+  color: #000;
+}
   height: 60px;
   border-radius: 
