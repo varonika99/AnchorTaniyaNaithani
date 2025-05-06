@@ -468,3 +468,59 @@ nav {
 .lightbox:target {
   display: flex;
 }
+.testimonials {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f8f9fa;
+}
+
+.testimonial-slider {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  min-height: 150px;
+}
+
+.testimonial {
+  display: none;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #444;
+  padding: 20px;
+}
+
+.testimonial.active {
+  display: block;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  font-style: normal;
+  color: #111;
+}
+
+.testimonial-controls {
+  margin-top: 15px;
+}
+
+.testimonial-controls button {
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.testimonial-controls button:hover {
+  color: #222;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
